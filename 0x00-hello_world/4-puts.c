@@ -1,6 +1,9 @@
 #include <stdio.h>
-/*The result will always be
- * Results will return 0*/
+/**
+ * main starting  point
+ *
+ * Always 0 (Success)
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
