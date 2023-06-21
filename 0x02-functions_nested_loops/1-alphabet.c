@@ -6,12 +6,14 @@
  * Return: Always 0.
  */
 int main(void)
-{
-	char alphabet;
-	for (alphabet = 'a';alphabet <= 'z'; alphabet++)
-		_putchar(alphabet);
 
-	_putchar('\n');
+{
+	for(int x = 'A'; x <= 'Z'; x++)
+{
+    int lower_x = tolower(x);
+    putchar(lower_x);
+	putchar('\n');
+}
 
 	return (0);
 }
