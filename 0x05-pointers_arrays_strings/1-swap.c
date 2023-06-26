@@ -3,7 +3,7 @@
 /**
  *1-swap.c - swaps the values of two integers
  *
- *swap_int - Swaps the two integers function
+ *swap_int: Swaps the two integers function
  *
  *@a: initial integer to be swapped
  *
