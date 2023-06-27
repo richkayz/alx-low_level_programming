@@ -7,7 +7,7 @@
  *
  *@b: Integer to be swapped
  *
- *function swap_int: Swaps the two integers function
+ *function swap_int(): Swaps the two integers function
  *
  *Return: 0
 */
