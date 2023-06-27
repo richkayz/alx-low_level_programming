@@ -10,11 +10,11 @@
 int _strlen(char *s){
 
 char a[100];
- 
+
 int length;
 
   length = strlen(a);
 
-  return 0;
+return 0;
 
 }
