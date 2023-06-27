@@ -1,20 +1,17 @@
 #include <stdio.h>
 
 /**
- *int _strlen - returns the length of a string
+ * _strlen - Function that returns the length of a string
  *
- *function swap_int(): Swaps the two integers function
+ * @s: this is the input string
  *
- *Return: 0
-*/
-int _strlen(char *s){
+ * Return: Lenngth of the string
+ */
+int _strlen(char *s)
+{
+	int index;
 
-char a[100];
-
-int length;
-
-  length = strlen(a);
-
-return 0;
-
+	for (index = 0; s[index] != '\0' ; index++)
+		;
+	return (index);
 }

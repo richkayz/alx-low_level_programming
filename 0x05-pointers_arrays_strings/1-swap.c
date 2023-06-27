@@ -1,20 +1,23 @@
 #include <stdio.h>
 
 /**
- *int _strlen - returns the length of a string
+ *1-swap.c - swaps the values of two integers
+ *
+ *@a: initial integer to be swapped
+ *
+ *@b: Integer to be swapped
  *
  *function swap_int(): Swaps the two integers function
  *
  *Return: 0
 */
-int _strlen(char *s){
+void swap_int(int *a, int *b)
+{
 
-char a[100];
- 
-int length;
+int temp;
 
-  length = strlen(a);
-
-  return 0;
+temp = *a;
+*a = *b;
+*b = temp;
 
 }
