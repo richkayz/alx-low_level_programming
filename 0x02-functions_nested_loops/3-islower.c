@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _islower - erch for lower case
- * @c: Returns 1 if c is lowercase
- * Returns 0 otherwise
+ * _islower - Check if lower, return c
+ * @c: contains value to be compared
+ * Return: Always 0.
  */
 int _islower(int c)
 
