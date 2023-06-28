@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
-*print_numbers - print 0123456789
-*
-*Return: void
+*print_numbers -  0123456789
+* 
+*Return: 0
 */
 
 void print_numbers(void)
