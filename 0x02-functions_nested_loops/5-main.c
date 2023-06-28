@@ -1,29 +1,33 @@
 #include "main.h"
 
 /**
- * print_sign - return + or - on numbers
+ * main - check the code.
  *
- * @n: the int to print
- *  Return: Always 0.
-  */
-int print_sign(int n)
+ * Return: Always 0.
+ */
+int main(void)
 {
-	if (n > 0)
-	{
-		_putchar ('+');
-		return (1);
-	}
+    int r;
 
-	else if (n == 0)
-	{
-		_putchar ('0');
-		return (0);
-	}
-
-	else
-	{
-		_putchar ('-');
-		return (-1);
-	}
-
+    r = print_sign(98);
+    _putchar(',');
+    _putchar(' ');
+    _putchar(r + '0');
+    _putchar('\n');
+    r = print_sign(0);
+    _putchar(',');
+    _putchar(' ');
+    _putchar(r + '0');
+    _putchar('\n');
+    r = print_sign(0xff);
+    _putchar(',');
+    _putchar(' ');
+    _putchar(r + '0');
+    _putchar('\n');
+    r = print_sign(-1);
+    _putchar(',');
+    _putchar(' ');
+    _putchar(r + '0');
+    _putchar('\n');
+    return (0);
 }
