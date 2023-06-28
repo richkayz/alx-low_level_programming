@@ -1,4 +1,7 @@
 #include "main.h"
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  *  print_last_digit - last digit
@@ -10,7 +13,6 @@
 int print_last_digit(int n)
 
 {
-	int last_digit;
-	_putchar(last_digit = n % 10);
-	return(last_digit);
+	int lastDigit = n % 10;
+	return lastDigit;
 }
