@@ -1,28 +1,30 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * print 1-100 - Print 1-100
- * @n: number of times the printed
- * Description: Can use all functions
+ * main - main block,fizz buzz from numbers 1 to 100
+ * Description: Multiples of 3, print Fizz. Multiples of 5, print Buzz.
+ * Multiples of both 3 and 5 should print FizzBuzz.
+ * Return: 0
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	i = 1;
-	while (i <= 100)
+	n = 1;
+	while (n <= 100)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if (n % 3 == 0 && n % 5 == 0)
 			printf("FizzBuzz");
-		else if (i % 3 == 0)
+		else if (n % 3 == 0)
 			printf("Fizz");
-		else if (i % 5 == 0)
+		else if (n % 5 == 0)
 			printf("Buzz");
 		else
-			printf("%d", i);
+			printf("%d",n);
 
-		if (i != 100)
+		if (n != 100)
 			printf(" ");
-		i++;
+		n++;
 	}
 	printf("\n");
 
