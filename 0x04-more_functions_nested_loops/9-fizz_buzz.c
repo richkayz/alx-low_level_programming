@@ -4,35 +4,27 @@
  * @n: number of times the printed
  * Description: Can use all functions
  */
- int main(void) {
-    int n = 1;
- 
-   //n is less than or equal to 100
-   while( n  <= 100) 
-   {
-   
-            if (n % 3 == 0)
-                    printf("Fizz");
-                
-                else if(n % 5 == 0)
-                    printf("Buzz");
-                
-                else if(n % 3 == 0 && n % 5 == 0);
-                    printf("FizzBuzz");
-            
-            else
-                    //print the value of n
-                printf("%d", n);
+int main(void)
+{
+	int i;
 
-                if (n != 100)
-                    printf(" ");
-            
-                //Increment the value of n
-                i++;
-                    
-            }
-    //print new line on comletion of loop
-    _putchar("\n");
-    
-   return 0;
+	i = 1;
+	while (i <= 100)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%d", i);
+
+		if (i != 100)
+			printf(" ");
+		i++;
+	}
+	printf("\n");
+
+	return (0);
 }
