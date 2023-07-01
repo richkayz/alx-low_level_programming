@@ -13,11 +13,11 @@ int main()
     while(letter < 'z')
     {
 
-        tolower(_putchar("%c", letter));
+        tolower(putchar("%c", letter));
         letter++;
 
     }
-    _putchar("\n");
+    putchar("\n");
     
     return 0;
 }
