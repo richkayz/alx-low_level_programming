@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include <ctype.h>
-/*prints the alphabet in lowercase, followed by a new line
+/**
+ * main - Prints a text according number
  *
- *use only putchar
- *
- *Return - 0
+ * Return: Always (0)
  */
-int main()
+int main(void)
 {
     char letter = 'a';
 
-    while(letter < 'z')
+    while(letter <= 'z')
     {
 
         tolower(putchar(letter));
