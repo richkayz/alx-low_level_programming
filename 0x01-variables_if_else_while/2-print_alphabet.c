@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <ctype.h>
+
 /**
- * main - Prints a text according number
+ * main -Lower letters Prints the alphabetic
  *
- * Return: Always (0)
+ * Return: Always (Success)
  */
 int main(void)
 {
-	char letter = 'a';
+	char letter;
 
-	while (letter <= 'z')
-	{
-		tolower (putchar(letter));
-		letter++; 
-	}
+	while (c <= 'z'; letter++)
+		 tolower (putchar(letter));
+
 	putchar('\n');
 	
-	return 0;
+	return (0);
 }
+
