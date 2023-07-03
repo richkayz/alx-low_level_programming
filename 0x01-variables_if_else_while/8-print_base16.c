@@ -5,7 +5,7 @@
  * Return: Always 0 (Success)
  */
 int main(void) {
-    // Write C code here
+   
     int n;
     char i = 'a';
    
