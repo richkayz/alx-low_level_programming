@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	int n, i;
+	int n = 0;
+	   int  i;
 	if (n < 0)
 	{
 		return(-1);
