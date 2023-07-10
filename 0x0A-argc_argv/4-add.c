@@ -14,6 +14,17 @@ int main(int argc, char *argv[]) {
     int sum = 0;
 
     // Start from argv[1] to skip the program name (argv[0])
+    if (argc <= 1)
+    {
+	 printf("0\n");
+    }
+    else if (isNotNumber(argv[1]) && isNotNumber(argv[2]))
+    {
+    	printf("error");
+	return (-1);
+    }
+    else
+    {
     for (int i = 1; i < argc; i++) {
         int num = atoi(argv[i]);
 
@@ -25,5 +36,7 @@ int main(int argc, char *argv[]) {
     }
 
     printf("Sum of positive numbers: %d\n", sum);
-
+    }
     return 0;
+
+}
