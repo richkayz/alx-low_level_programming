@@ -1,42 +1,42 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
 /**
- * main - adds positive numbers
+ * main - Program that adds positive numbers
+
+ * @argc: This is the argument count
+ * @argv: This is the argument vector
  *
- * @argc: argument counter
- * @argv: argument vector
- *
- * Return: 1 if ERROR such as symbols that are not numbers,
- * 0 if nothing is passed
+ * Return: 0;
  */
-int main(int argc, char *argv[]) {
-    int sum = 0;
+int main(int argc, char *argv[])
+{
+	int sum = 0, i;
 
-    // Start from argv[1] to skip the program name (argv[0])
-    if (argc <= 1)
-    {
-	 printf("0\n");
-    }
-    else if (isNotNumber(argv[1]) && isNotNumber(argv[2]))
-    {
-    	printf("error");
-	return (-1);
-    }
-    else
-    {
-    for (int i = 1; i < argc; i++) {
-        int num = atoi(argv[i]);
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			int b;
+			char *str;
 
-        if (num <= 0) {
-            continue;
-        }
-
-        sum += num;
-    }
-
-    printf("Sum of positive numbers: %d\n", sum);
-    }
-    return 0;
-
+			str = argv[i];
+			for (b = 0; str[b] != '\0'; b++)
+			{
+				if (str[b] < 48 || str[b] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
+		}
+	}
+	for (i = 1; i < argc; i++)
+	{
+		sum += atoi(argv[i]);
+	}
+	printf("%d\n", sum);
+	return (0);
 }
