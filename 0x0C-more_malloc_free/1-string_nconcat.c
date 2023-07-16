@@ -18,8 +18,8 @@ char *str_concat(char *s1, char *s2)
 	unsigned int s1len = 0;
 	unsigned int s2len = 0;
 	unsigned int s3len;
-	unsigned int k = 0;
-	unsigned int lj = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -37,17 +37,17 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == NULL)
 		return (NULL);
 
-	while (k < s1len)
+	while (i < s1len)
 	{
-		s3[k] = s1[k];
-	ki++;
+		s3[i] = s1[i];
+		i++;
 	}
 
-	while (k <= s3len)
+	while (i <= s3len)
 	{
-		s3[k] = s2[l];
-		l++;
-		l++;
+		s3[i] = s2[j];
+		i++;
+		j++;
 	}
 	return (s3);
 }
